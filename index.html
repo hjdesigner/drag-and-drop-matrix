@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drag and Drop Matrix</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!--<div class="form">
+      <div class="form__field">
+          <label for="photo">Foto</label>
+          <input type="text" id="photo" name="photo" data-id="url">
+      </div>      
+      <button type="submit" data-id="enviar">Enviar</button>
+    </div>-->
+    <div class="root">
+      <div class="root__image">
+        <img src="https://devcastrojunin.github.io/monta-facil/images/matriz-img/sala.jpg" alt="" data-id="rootImage">
+      </div>
+      <div id="drag-1" class="draggable box-select colors">
+        <p>Cores</p>
+        <p>X: <span data-id="left"></span>  -  Y: <span data-id="top"></span></p>
+      </div>
+      <div id="drag-2" class="draggable box-select accessories">
+        <p>Acessórios</p>
+        <p>X: <span data-id="left"></span>  -  Y: <span data-id="top"></span></p>
+      </div>  
+      <div id="drag-3" class="draggable box-select type">
+          <p>Tipos de material</p>
+          <p>X: <span data-id="left"></span>  -  Y: <span data-id="top"></span></p>
+        </div>  
+    </div>
+  </div>    
+      
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3/dist/interact.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
